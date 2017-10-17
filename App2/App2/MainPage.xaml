@@ -7,7 +7,7 @@
         <Label Text="!" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Micro" Font="Arial" BackgroundColor="AliceBlue"/>
         <Entry Placeholder="Usuario"></Entry>
         <Entry Placeholder="Password"></Entry>
-        <Button Text="Ingresar"></Button>
+        <Button Text="Ingresar" Clicked="Button_Clicked"></Button>
     </StackLayout>
 	
 

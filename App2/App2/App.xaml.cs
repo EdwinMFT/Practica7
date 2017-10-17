@@ -13,7 +13,8 @@ namespace App2
         {
             InitializeComponent();
 
-            MainPage = new App2.MainPage();
+            //MainPage = new App2.MainPage();
+            MainPage = new NavigationPage(new TeshPage());
         }
 
         protected override void OnStart()

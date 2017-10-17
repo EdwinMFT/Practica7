@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.SelectPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+
+            </Grid.RowDefinitions>
+
+            <Label Text="ID: " Grid.Column="0" Grid.Row="0" VerticalOptions="Center"></Label>
+            <Entry x:Name="Entry_Id" Text="{Binding Matricula}" Grid.Column="1" Grid.Row="0" IsEnabled="False"/>
+            <Label Text="ID: " Grid.Column="0" Grid.Row="1" VerticalOptions="Center"></Label>
+            <Entry x:Name="Entry_Name" Text="{Binding Nombre}" Grid.Column="1" Grid.Row="1"/>
+            <Label Text="Apellido: " Grid.Column="0" Grid.Row="2" VerticalOptions="Center"></Label>
+            <Entry x:Name="Entry_Ap" Text="{Binding Apellidos}" Grid.Column="1" Grid.Row="2"/>
+            <Label Text="Direccion: " Grid.Column="0" Grid.Row="3" VerticalOptions="Center"></Label>
+            <Entry x:Name="Entry_Dir" Text="{Binding Direccion}" Grid.Column="1" Grid.Row="3"/>
+            <Label Text="Telefono: " Grid.Column="0" Grid.Row="4" VerticalOptions="Center"></Label>
+            <Entry x:Name="Entry_Tel" Text="{Binding Telefono}" Grid.Column="1" Grid.Row="4"/>
+            <Label Text="Carrera: " Grid.Column="0" Grid.Row="5" VerticalOptions="Center"></Label>
+            <Entry x:Name="Entry_Car" Text="{Binding Carrera}" Grid.Column="1" Grid.Row="5"/>
+            <Label Text="Semestre: " Grid.Column="0" Grid.Row="6" VerticalOptions="Center"></Label>
+            <Entry x:Name="Entry_Sem" Text="{Binding Semestre}" Grid.Column="1" Grid.Row="6"/>
+            <Label Text="Correo: " Grid.Column="0" Grid.Row="7" VerticalOptions="Center"></Label>
+            <Entry x:Name="Entry_Cor" Text="{Binding Correo}" Grid.Column="1" Grid.Row="7"/>
+            <Label Text="Github: " Grid.Column="0" Grid.Row="8" VerticalOptions="Center"></Label>
+            <Entry x:Name="Entry_Git" Text="{Binding Github}" Grid.Column="1" Grid.Row="8"/>
+            
+            <Button Text="Actualizar" Clicked="Actualizar_Clicked" Grid.Column="0" Grid.Row="9"/>
+            <Button Text="Delete" Clicked="Delete_Clicked" Grid.Column="1" Grid.Row="9"/>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

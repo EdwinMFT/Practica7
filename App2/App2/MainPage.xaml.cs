@@ -13,5 +13,10 @@ namespace App2
         {
             InitializeComponent();
         }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new NavigationPage(new MasterDetailPage1()));
+        }
     }
 }
